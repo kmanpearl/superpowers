@@ -148,13 +148,12 @@ Use the least powerful model that can handle each role to conserve cost and incr
 The final whole-branch review is one of these — dispatch it on the most
 capable available model, not the session default.
 
-**Review tasks**: choose the model with the same judgment, scaled to the
-diff's size, complexity, and risk. A small mechanical diff does not need the
-most capable model; a subtle concurrency change does. Scoped re-reviews of
-small fix diffs take a cheap-to-mid tier.
+**Review tasks**: task reviews and scoped re-reviews in fix rounds 1-3 run
+on the mid tier (sonnet), whatever the diff. Rounds 4-5 and the final
+whole-branch review run on the most capable model.
 
-**Fix-loop escalation (rounds 4-5)**: use a model at least one tier above
-the implementer that got stuck.
+**Fix-loop escalation (rounds 4-5)**: use the most capable model for both
+the fix implementer and its re-review.
 
 **Always specify the model explicitly when dispatching a subagent.** An
 omitted model inherits your session's model — often the most capable and

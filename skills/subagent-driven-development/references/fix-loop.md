@@ -26,12 +26,13 @@ choices. If your harness cannot send another message to a live subagent,
 dispatch a fresh implementer carrying the brief path, the report-file path,
 and the findings — the report file is the persistent memory either way.
 
-**Rounds 4-5 — dispatch a fresh implementer on a more capable model** (per
-SKILL.md's Model Selection), with the brief path, the report-file path, the open
-findings, and this framing: "A prior implementer attempted this task
-[N] times; you own it now. Read the report file for what was tried." A loop
-that survives three resumes usually means the implementer cannot see its
-own problem — fresh eyes and a capability bump in one move.
+**Rounds 4-5 — dispatch a fresh implementer on the most capable model**
+(per SKILL.md's Model Selection), with the brief path, the report-file
+path, the open findings, and this framing: "A prior implementer attempted
+this task [N] times; you own it now. Read the report file for what was
+tried." The scoped re-review in these rounds runs on the most capable model
+too. A loop that survives three resumes usually means the implementer
+cannot see its own problem — fresh eyes and a capability bump in one move.
 
 **Every round, either way:** the implementer fixes, re-runs the tests
 covering the amended code, appends its fix report to the same report file,
@@ -69,8 +70,14 @@ the cross-task context the reviewer lacks:
   plan defect: rule on the smallest change that unblocks the dependent work,
   ledger it as `Task <N>: Ruling: <finding> — <what you decided and why>`,
   and carry it into the next task's dispatch. Parking a structural failure
-  silently lets every dependent task build on it. Stop only when the defect
-  leaves every path forward a guess.
+  silently lets every dependent task build on it.
+
+A Critical or Important finding you cannot settle in one of these ways
+stops the task as blocked instead of continuing on a guess: list the open
+findings and what each round tried, and ask your human partner. A headless
+run, with no partner to ask, ends with a BLOCKED verdict carrying that
+list. This is the last of the four stops at the top of SKILL.md: every
+path forward is a guess.
 
 Adjudicate only at the cap. Adjudicating earlier to end a loop is
 pre-judging with a different name. Every adjudication is a ledger entry —
