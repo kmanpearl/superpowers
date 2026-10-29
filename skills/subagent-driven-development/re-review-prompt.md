@@ -102,7 +102,8 @@ Subagent (general-purpose):
 
 **Placeholders:**
 - `[MODEL]` — REQUIRED: reviewer model per SKILL.md Model Selection: the
-  mid tier in fix rounds 1-3, the most capable model in rounds 4-5
+  mid tier in fix rounds 1-3 and for the final review's fix wave, the
+  most capable model in rounds 4-5
 - `[BRIEF_FILE]` — the task brief file (same file the implementer worked from)
 - `[FINDINGS]` — the Critical/Important findings and spec gaps from the
   previous review, copied verbatim, one per bullet

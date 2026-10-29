@@ -72,12 +72,13 @@ the cross-task context the reviewer lacks:
   and carry it into the next task's dispatch. Parking a structural failure
   silently lets every dependent task build on it.
 
-A Critical or Important finding you cannot settle in one of these ways
-stops the task as blocked instead of continuing on a guess: list the open
-findings and what each round tried, and ask your human partner. A headless
-run, with no partner to ask, ends with a BLOCKED verdict carrying that
-list. This is the last of the four stops at the top of SKILL.md: every
-path forward is a guess.
+After round 5, a Critical or Important finding you cannot settle in one
+of these ways stops the task as blocked. Ledger it as
+`Task <N>: blocked — <open findings>`, list the open findings and what
+each round tried, and ask your human partner. A headless run, with no
+partner to ask, ends with a BLOCKED verdict carrying that list. This
+counts as the fourth stop at the top of SKILL.md, where every path
+forward is a guess.
 
 Adjudicate only at the cap. Adjudicating earlier to end a loop is
 pre-judging with a different name. Every adjudication is a ledger entry —
