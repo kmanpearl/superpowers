@@ -13,6 +13,9 @@ superpowers:requesting-code-review's
 [code-reviewer.md](../../requesting-code-review/code-reviewer.md). Point it at
 the ledger's deferred-minor and parked lines so it can triage which must be
 fixed before merge.
+The same reviewer also checks every added or changed comment and docstring
+with writing-python-docs and humanizer; say so in the dispatch. No separate
+comment-review subagent runs.
 
 If the final whole-branch review returns findings, dispatch ONE fix subagent
 with the complete findings list — not one fixer per finding.
